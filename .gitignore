@@ -141,8 +141,10 @@ celerybeat.pid
 env/
 venv/
 ENV/
+.idea/*
 env.bak/
 venv.bak/
+scrapper/_dados_teste_proa/*
 
 # Spyder project settings
 .spyderproject
