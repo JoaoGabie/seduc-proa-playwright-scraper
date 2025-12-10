@@ -6,12 +6,12 @@ from datetime import datetime
 from dotenv import load_dotenv
 from playwright.sync_api import sync_playwright
 
-MODO_DEBUG = False
+MODO_DEBUG = True
 
 # --- 1. CONFIGURAÇÕES INICIAIS ---
 
 CONFIG_DIRETORIOS = {
-    "CAMINHO_ENV": r"C:\Users\joao-dasilva\PycharmProjects\sibelle-automation\scrapper\.env",
+    "CAMINHO_ENV": r"C:\Users\joao-dasilva\PycharmProjects\seduc-proa-playwright-scraper\.env",
     "DIRETORIO_ATUAL": os.getcwd(),
     "PASTA_RAIZ_DADOS": os.path.join(os.getcwd(), "_dados_teste_proa"),
     "DB_PATH": os.path.join(os.getcwd(), "_dados_teste_proa", "controle_processos_baixados.csv"),
@@ -33,13 +33,13 @@ CONFIG_CAIXAS = [
     {
         "nome_interno": "DEPARTAMENTO DE OBRAS ESCOLARES - NOTIFICATORIO",       # Nome para salvar no CSV/Log
         "filtro_grupo_label": "DMOE-NOT", # O texto exato para buscar no Dropdown do site
-        "pasta_destino": r"C:\Users\joao-dasilva\PycharmProjects\sibelle-automation\scrapper\_dados_teste_proa\PDF_NOT",     # Onde salvar os arquivos desta caixa
+        "pasta_destino": r"C:\Users\joao-dasilva\PycharmProjects\seduc-proa-playwright-scraper\scrapper\_dados_teste_proa\PDF_NOT",     # Onde salvar os arquivos desta caixa
         "guia_tabela": "DMOE-NOT"
     },
     {
         "nome_interno": "DEPARTAMENTO DE OBRAS ESCOLARES - MINISTÉRIO PÚBLICO",
         "filtro_grupo_label": "DMOE-MP",
-        "pasta_destino": r"C:\Users\joao-dasilva\PycharmProjects\sibelle-automation\scrapper\_dados_teste_proa\PDF_MP",
+        "pasta_destino": r"C:\Users\joao-dasilva\PycharmProjects\seduc-proa-playwright-scraper\scrapper\_dados_teste_proa\PDF_MP",
         "guia_tabela": "DMOE-MP"
 },
 ]
